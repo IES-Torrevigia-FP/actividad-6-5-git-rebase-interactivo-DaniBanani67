@@ -1,0 +1,37 @@
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-DaniBanani67$ git rebase -i HEAD~3
+error: no se puede analizar 'bfs2d6e'
+error: línea inválida 1: pick bfs2d6e commit random 1
+error: no se puede analizar '82sda80db'
+error: línea inválida 2: pick 82sda80db commit random 2
+error: no se puede analizar 'fd1cdasf4'
+error: línea inválida 3: pick fd1cdasf4 commit random 2
+Se puede arreglar esto con 'git rebase --edit-todo' y después ejecuta 'git rebase --continue'.
+O se puede abortar el rebase con 'git rebase --abort'.
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-DaniBanani67$ git rebase --abort
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-DaniBanani67$ git status
+En la rama main
+Tu rama está adelantada a 'origin/main' por 5 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        cp1-historial-original.txt
+        cp2-reword.txt
+        cp3-squash.txt
+        cp4-reordenar.txt
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-DaniBanani67$ git log --oneline
+fd1cff4 (HEAD -> main) commit random 2
+82280db commit random 2
+bf22d6e commit random 1
+8eafd60 wip 1
+84d67c8 Commit 1: versión inicial
+42c1d7f (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commit
+
+
+El comando `git rebase --abort` se utiliza para cancelar un rebase en curso
+y volver al estado anterior del repositorio.
+
+Es util cuando ocurre un conflicto que no queremos resolver o cuando se comete un error durante un rebase.

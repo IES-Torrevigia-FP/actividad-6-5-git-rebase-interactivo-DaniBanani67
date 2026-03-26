@@ -1,0 +1,7 @@
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-DaniBanani67$ git log --oneline
+aa09210 (HEAD -> main) otro commit
+bc73f5b arreglo
+dd15c01 wip 1
+84d67c8 Commit 1: versión inicial
+42c1d7f (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commit

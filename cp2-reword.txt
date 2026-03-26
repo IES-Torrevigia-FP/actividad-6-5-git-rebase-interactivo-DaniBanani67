@@ -1,0 +1,11 @@
+dani@dani-VirtualBox:~/Documentos/dev/actividad-6-5-git-rebase-interactivo-DaniBanani67$ git log --oneline
+dcf42fb (HEAD -> main) Añade línea extra 2 en app
+d93ec5a Añade línea extra 1 en app
+d0cc4a9 wip 1
+84d67c8 Commit 1: versión inicial
+42c1d7f (origin/main, origin/HEAD) add deadline
+bb807e3 Initial commit
+
+
+El comando `reword` en un rebase interactivo permite modificar el mensaje de un commit sin cambiar lo que tiene adentro. Git se detiene en ese commit
+y abre el editor para que se escriba un mensaje más claro y descriptivo. Es útil para modificar el historial antes de compartirlo.
